@@ -88,3 +88,6 @@ againButton.onclick = () => {
 
 alert("I got this :)")
 
+function add(){
+    console.log(5+9)
+}

@@ -91,3 +91,6 @@ alert("I got this :)")
 function add(){
     console.log(5+9)
 }
+
+
+console.log(`trying bash right now`)

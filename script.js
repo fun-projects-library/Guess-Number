@@ -21,7 +21,7 @@ checkButton.onclick = () => {
     var guess = document.querySelector('.guess').value; 
     var classNum = document.querySelector('.number');
 
-    if(point > 1) {
+    if(point >= 1) {
 
         if(guess <= 50 && guess >= 1){
 
@@ -31,7 +31,7 @@ checkButton.onclick = () => {
                 message.innerHTML = "it is low"
         
                 } else if(guess > secretNumber){
-                point.innerHTML--
+                point--
                 score.innerHTML = point
                 message.innerHTML = "it is high"
         
@@ -59,8 +59,6 @@ checkButton.onclick = () => {
         
     }
 
-    
-
     document.querySelector('.guess').value = "";
     console.log(secretNumber, guess)
 };
@@ -78,19 +76,6 @@ againButton.onclick = () => {
     score.innerHTML = point;
 }
 
-// let reset = document.querySelector(".reset")
-// reset.style.marginTop = "150px";
-
-// reset.onclick = () => {
-//     highScore.innerHTML = 0;
-// }
 
 
-alert("I got this :)")
 
-function add(){
-    console.log(5+9)
-}
-
-
-console.log(`trying bash right now`)
